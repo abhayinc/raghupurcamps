@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhayinc.github.io/raghupurcamps/sitemap.xml

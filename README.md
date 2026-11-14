@@ -1,66 +1,48 @@
-# Raghupur Fort Camps & Treks 🏔️⛺
+# Raghupur Fort Camps
 
-Official website for **Raghupur Fort Camps**, high-altitude alpine camping, and guided Himalayan treks across **Jalori Pass**, **Serolsar Lake**, **Jibhi**, and **Tirthan Valley** in Himachal Pradesh, India.
+Website for **Raghupur Fort Camps**: high-altitude camping and guided treks around Jalori Pass, Raghupur Fort, Serolsar Lake, Jibhi and Tirthan Valley, Himachal Pradesh.
 
----
+Plain HTML, CSS and a little JavaScript. No build step, no dependencies.
 
-## ✨ Features
+## Pages
 
-- **Starry Night Alpine Sky**: Live canvas simulation with twinkling stars and occasional shooting stars, matching the serene nighttime stargazing experience at Jalori Pass.
-- **Editorial Typography**: Styled with *Playfair Display* and *Plus Jakarta Sans*, featuring warm alpine amber accents (`#f29851`) and creamy ivory linen layouts (`#faf7f2`).
-- **Complete Destination Sections**:
-  - **Serolsar Lake Trek & Camping**: Folklore of Mata Budhi Nagin and the sacred Aabi bird, trail timeline from Jalori Pass, day hikes & combined overnight packages.
-  - **Raghupur Fort Stargazing Camp**: High-altitude velvet meadow camping at 11,600 ft (3,540 m), 360-degree Dhauladhar & Pir Panjal mountain views, campfire, and warm Himachali dining.
-  - **Fort Trek & Historic Ruins**: Ancient citadel built by Mandi kings, stone masonry, historic reservoir, and alpine trail guide.
-  - **Jibhi & Tirthan Valley**: 1500-year-old Chehni Kothi tower temple, hidden cedar waterfalls, and UNESCO Great Himalayan National Park gateway.
-  - **Plan Your Trip**: Comprehensive travel guide from Delhi/Chandigarh via Aut tunnel, altitude acclimatization, season-by-season guide, gear checklist, and FAQ accordion.
-- **Direct Booking & Inquiries**:
-  - One-click **Direct Dial** (`+91 70187 36861`)
-  - Instant **WhatsApp Booking Generator** with pre-filled package, date, and guest details
-  - Interactive booking modal with date restrictions and validation
-  - Floating mobile-optimized quick contact bar
-- **Zero Dependencies & Fast**: Vanilla HTML5, modern CSS3 variables, and lightweight JavaScript. Opens instantly in any browser and deploys effortlessly to **GitHub Pages**, **Vercel**, or **Netlify**.
+| File | Purpose |
+| --- | --- |
+| `index.html` | Home: overview of all experiences |
+| `raghupur-fort-camping.html` | Camp, tent options, prices |
+| `raghupur-fort-trek.html` | Fort trek route and tips |
+| `serolsar-lake-trek.html` | Serolsar Lake trek, legend, packages |
+| `jibhi-tirthan-valley.html` | Jibhi, Chehni Kothi, Tirthan Valley |
+| `plan-your-trip.html` | How to reach, seasons, packing list, FAQ |
+| `404.html` | Not-found page |
 
----
+Shared files: `styles.css`, `app.js`, `favicon.svg`, `apple-touch-icon.png`, `og-image.jpg` (social share preview), `sitemap.xml`, `robots.txt`.
 
-## 📁 Project Structure
+Each page has its own title, description, canonical URL, social preview tags and structured data (JSON-LD), so Google can index and rank them separately. Old single-page links such as `index.html#camping` still redirect to the right page.
 
-```
-raghupurcamps/
-├── index.html       # Main responsive website with hash navigation & tabs
-├── styles.css       # Complete design system, starry night theme, responsive rules
-├── app.js           # Starry canvas engine, interactive modal, WhatsApp router
-└── README.md        # Documentation and deployment guide
-```
+## Before you publish: things to check
 
----
+1. **Domain.** All canonical URLs, `og:url`, the sitemap and `robots.txt` use `https://abhayinc.github.io/raghupurcamps`. If you connect a custom domain, find and replace that address in every `.html` file, `sitemap.xml` and `robots.txt`.
+2. **Prices and package contents.** Prices (Rs 1,200 to 5,500) and inclusions come from the original site. Confirm them, and the tent and meal details, against what you actually offer.
+3. **Photos.** The two photos on the Fort Trek and Serolsar pages are placeholder stock images. Replace them with your own photos (add the files to the repo and change the `src`). Real photos of the camp will help both bookings and rankings.
+4. **Contact number.** `+91 70187 36861` is used for calls and WhatsApp everywhere (search for `7018736861` to change it).
+5. **Google Business Profile / Maps.** Add a pin for the camp and link it from the footer once it exists. Adding exact coordinates to the structured data on the home page will also help.
 
-## 🚀 Running Locally
+## Run locally
 
-You can open the website directly without installing any tools:
-
-1. Simply double-click `index.html` to open it in your browser.
-2. Or run a local HTTP server:
+Open `index.html` in a browser, or:
 
 ```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js (npx)
-npx serve .
+python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+then visit `http://localhost:8000`.
 
----
+## Publish on GitHub Pages
 
-## 🌐 Deploying to GitHub Pages
+1. Repository **Settings** > **Pages**.
+2. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
+3. The site goes live at `https://abhayinc.github.io/raghupurcamps/`.
+4. Submit `sitemap.xml` in Google Search Console after launch.
 
-1. In your GitHub repository, go to **Settings** &rarr; **Pages**.
-2. Under **Build and deployment** &rarr; **Source**, select `Deploy from a branch`.
-3. Choose branch `main` and folder `/ (root)`, then click **Save**.
-4. Your website will be live in minutes at `https://abhayinc.github.io/raghupurcamps/`!
-
----
-
-&copy; 2026 Raghupur Fort Camps. Jalori Pass &bull; Himachal Pradesh, India.
+&copy; 2026 Raghupur Fort Camps. Jalori Pass, Himachal Pradesh, India.
