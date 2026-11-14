@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raghupur Fort Camps & Trek | Jalori Pass, Jibhi, Serolsar Lake</title>
+  <meta name="description" content="Experience high-altitude camping, Serolsar Lake trek, and Raghupur Fort stargazing near Jalori Pass, Jibhi & Tirthan Valley, Himachal Pradesh.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#serolsar" class="brand-logo" onclick="switchTab('serolsar')">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3L2 21h20L12 3z"/>
+          <path d="M12 12v9"/>
+        </svg>
+        <span class="brand-name">Raghupur Fort Camps</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#camping" class="nav-link" data-tab="camping" onclick="switchTab('camping')">Camping</a>
+        <a href="#fort-trek" class="nav-link" data-tab="fort-trek" onclick="switchTab('fort-trek')">Fort Trek</a>
+        <a href="#serolsar" class="nav-link active" data-tab="serolsar" onclick="switchTab('serolsar')">Serolsar Lake</a>
+        <a href="#jibhi-tirthan" class="nav-link" data-tab="jibhi-tirthan" onclick="switchTab('jibhi-tirthan')">Jibhi & Tirthan</a>
+        <a href="#plan-trip" class="nav-link" data-tab="plan-trip" onclick="switchTab('plan-trip')">Plan Your Trip</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button class="btn btn-amber pill-btn" onclick="openBookingModal('General Inquiry')">Call to book</button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3L2 21h20L12 3z"/>
+          <path d="M12 12v9"/>
+        </svg>
+        <span>Raghupur Fort Camps</span>
+      </div>
+      <button class="close-drawer" id="close-drawer">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#camping" class="drawer-link" onclick="switchTab('camping'); closeMobileMenu();">Camping</a>
+      <a href="#fort-trek" class="drawer-link" onclick="switchTab('fort-trek'); closeMobileMenu();">Fort Trek</a>
+      <a href="#serolsar" class="drawer-link active" onclick="switchTab('serolsar'); closeMobileMenu();">Serolsar Lake</a>
+      <a href="#jibhi-tirthan" class="drawer-link" onclick="switchTab('jibhi-tirthan'); closeMobileMenu();">Jibhi & Tirthan</a>
+      <a href="#plan-trip" class="drawer-link" onclick="switchTab('plan-trip'); closeMobileMenu();">Plan Your Trip</a>
+    </div>
+    <div class="drawer-footer">
+      <a href="tel:+917018736861" class="btn btn-amber pill-btn full-width">Call +91 70187 36861</a>
+      <a href="https://wa.me/917018736861?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20Raghupur%20Fort%20Camps%20and%20Treks" target="_blank" class="btn btn-outline-white pill-btn full-width">Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 1: SEROLSAR LAKE (EXACT MATCH TO USER SCREENSHOT & EXTENDED CONTENT) -->
+  <!-- ========================================================================= -->
+  <div class="tab-pane active" id="pane-serolsar">
+    
+    <!-- Hero Section with Deep Starry Sky Canvas -->
+    <section class="hero-section hero-serolsar">
+      <canvas id="star-canvas-serolsar" class="star-canvas"></canvas>
+      <div class="hero-silhouette"></div>
+      
+      <div class="hero-container">
+        <!-- Breadcrumbs -->
+        <div class="hero-breadcrumbs">
+          <a href="#serolsar" onclick="switchTab('serolsar')">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Serolsar Lake</span>
+        </div>
+
+        <!-- Location Kicker -->
+        <p class="hero-kicker">NEAR JALORI PASS &bull; JIBHI</p>
+
+        <!-- Main Heading with Editorial Font -->
+        <h1 class="hero-title">
+          Serolsar Lake <span class="italic-accent">trek</span><br>
+          and camping
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle">
+          A calm, sacred forest lake just below Jalori Pass. Easy to pair with a night at Raghupur Fort.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="tel:+917018736861" class="btn btn-amber pill-btn btn-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Call +91 70187 36861
+          </a>
+          <a href="https://wa.me/917018736861?text=Hi%2C%20I%20am%20interested%20in%20the%20Serolsar%20Lake%20Trek%20and%20Camping" target="_blank" class="btn btn-outline-white pill-btn btn-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Intro Section (Cream Linen Background) -->
+    <section class="editorial-section">
+      <div class="content-container">
+        
+        <div class="editorial-header">
+          <h2 class="editorial-title">Serolsar Lake: a quiet forest lake near Jalori Pass</h2>
+          <p class="editorial-lead">
+            Serolsar Lake (also written Seroalsar or Serolsar Tal) is a small, calm lake set deep in forest just below Jalori Pass. The water mirrors the sky, shifting between green, blue and grey. On the bank stands a small temple dedicated to Budhi Nagin, and locals treat the lake as sacred.
+          </p>
+        </div>
+
+        <!-- Trek Highlights Bento Grid -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num">5 km</span>
+            <span class="stat-label">Trail Distance</span>
+            <span class="stat-note">One-way gentle walk</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10,170 ft</span>
+            <span class="stat-label">Altitude</span>
+            <span class="stat-note">3,100 m above sea level</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2 hrs</span>
+            <span class="stat-label">Trek Time</span>
+            <span class="stat-note">Easy to moderate slope</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">Mar – Dec</span>
+            <span class="stat-label">Best Season</span>
+            <span class="stat-note">Snow trekking in winter</span>
+          </div>
+        </div>
+
+        <!-- Story & Folklore Split Section -->
+        <div class="story-grid">
+          <div class="story-content">
+            <span class="section-tag">THE SACRED LEGEND</span>
+            <h3 class="story-heading">The Legend of Mata Budhi Nagin & The Pure Waters</h3>
+            <p>
+              According to ancient Himalayan folklore, Serolsar Lake is the sacred abode of Mata Budhi Nagin—the mythical mother of sixty Nag (serpent) deities and protector of the inner Seraj valley. The lake is revered with supreme piety by the villagers of Kullu and Mandi.
+            </p>
+            <p>
+              One of the most mystical phenomena observed by trekkers is how impeccably spotless the lake remains throughout the year. Legend says a tiny species of sacred bird, known locally as <em>Aabi</em>, diligently sweeps the lake. Whenever a dry oak leaf falls into the water, the bird swoops down to retrieve it, ensuring the goddess’s sanctuary remains mirror-clear.
+            </p>
+            <div class="highlight-quote">
+              <p>"Shoes are traditionally kept well away from the perimeter, and no one dares pollute its sacred waters. The silence here belongs to another era."</p>
+            </div>
+          </div>
+          <div class="story-media">
+            <div class="media-frame">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Mystical Alpine Forest Lake" class="media-img">
+              <div class="media-caption">
+                <span>Serolsar Tal under morning mist</span>
+                <span class="badge">Sacred Sanctuary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trail Route & Checkpoints -->
+        <div class="trail-experience">
+          <div class="center-header">
+            <span class="section-tag">THE TRAIL JOURNEY</span>
+            <h3 class="section-heading">From Jalori Ridge into Ancient Oak Woods</h3>
+            <p class="section-description">A scenic, family-friendly ridge trek transitioning from open alpine meadows into towering Himalayan oak and rhododendron canopies.</p>
+          </div>
+
+          <div class="timeline-trail">
+            <div class="trail-step">
+              <div class="step-marker">01</div>
+              <div class="step-card">
+                <h4>Jalori Pass Trailhead (10,570 ft)</h4>
+                <p>Begin behind the Mahakali temple at Jalori Pass. Look out across both the Kullu and Shimla mountain divides before entering the tree line.</p>
+              </div>
+            </div>
+            <div class="trail-step">
+              <div class="step-marker">02</div>
+              <div class="step-card">
+                <h4>The Golden Oak Canopy</h4>
+                <p>A gentle, shaded trail carpeted with pine needles and lichens. In April and May, scarlet rhododendron blossoms illuminate the path.</p>
+              </div>
+            </div>
+            <div class="trail-step">
+              <div class="step-marker">03</div>
+              <div class="step-card">
+                <h4>Chhabadhar Meadow Rest Stop</h4>
+                <p>A midway clearing with open grazing grounds, small tea huts serving hot chai and Maggi, and views across deep forest gorges.</p>
+              </div>
+            </div>
+            <div class="trail-step">
+              <div class="step-marker">04</div>
+              <div class="step-card">
+                <h4>The Sacred Lake & Budhi Nagin Temple</h4>
+                <p>Descend into the serene forest basin where the quiet emerald lake emerges surrounded by sacred wooden shrines and prayer flags.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combined Experience Callout -->
+        <div class="banner-box">
+          <div class="banner-text">
+            <span class="banner-kicker">PERFECT COMBINATION</span>
+            <h3>Pair Serolsar Lake with Raghupur Fort Camps</h3>
+            <p>Hike to Serolsar Lake during the day, then ascend to Raghupur Fort meadow for an unforgettable night of high-altitude stargazing, warm bonfire, and 360-degree Himalayan sunrise.</p>
+          </div>
+          <div class="banner-action">
+            <button class="btn btn-amber pill-btn" onclick="openBookingModal('Serolsar + Raghupur Combo')">Book Combo Package</button>
+            <a href="#camping" class="btn btn-outline-dark pill-btn" onclick="switchTab('camping')">Explore Camps</a>
+          </div>
+        </div>
+
+        <!-- Packages for Serolsar Lake -->
+        <div class="packages-section">
+          <div class="center-header">
+            <span class="section-tag">EXPERIENCES & PACKAGES</span>
+            <h3 class="section-heading">Handcrafted Serolsar Lake Itineraries</h3>
+          </div>
+
+          <div class="packages-grid">
+            <!-- Card 1 -->
+            <div class="package-card">
+              <div class="card-badge">Day Expedition</div>
+              <h4 class="package-title">Serolsar Lake Guided Day Trek</h4>
+              <p class="package-subtitle">Ideal for families, couples, and day travelers staying in Jibhi or Tirthan Valley.</p>
+              <div class="package-price">₹1,200 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>Local Himalayan mountain guide</li>
+                <li>Packed trail snacks & alpine hot tea</li>
+                <li>Budhi Nagin temple heritage tour</li>
+                <li>Forest permits & emergency first aid</li>
+              </ul>
+              <button class="btn btn-dark full-width pill-btn" onclick="openBookingModal('Serolsar Day Trek')">Book Day Trek</button>
+            </div>
+
+            <!-- Card 2 (Featured) -->
+            <div class="package-card featured">
+              <div class="featured-ribbon">Most Popular</div>
+              <div class="card-badge">2 Days / 1 Night</div>
+              <h4 class="package-title">Serolsar + Raghupur Fort Meadow Camp</h4>
+              <p class="package-subtitle">The ultimate alpine weekend: Day trek to the sacred lake + overnight luxury dome camping at Raghupur Fort.</p>
+              <div class="package-price">₹2,800 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>Overnight dome/Swiss tent at Raghupur Fort</li>
+                <li>Campfire, bonfire music & stargazing</li>
+                <li>Warm Himachali dinner & breakfast buffet</li>
+                <li>Guided treks to both Serolsar Lake & Fort ruins</li>
+              </ul>
+              <button class="btn btn-amber full-width pill-btn" onclick="openBookingModal('Serolsar + Raghupur Camp 2D1N')">Reserve Your Tent</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="package-card">
+              <div class="card-badge">Custom Group</div>
+              <h4 class="package-title">Full Seraj Valley Circuit (3D / 2N)</h4>
+              <p class="package-subtitle">Comprehensive exploration covering Jibhi waterfalls, Jalori Pass, Serolsar Lake, and Raghupur Ridge.</p>
+              <div class="package-price">₹5,500 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>2 nights high-altitude camping & homestay</li>
+                <li>All gourmet meals & barbecue night</li>
+                <li>Local transportation between Jibhi & Jalori</li>
+                <li>Dedicated wilderness leader & photography</li>
+              </ul>
+              <button class="btn btn-dark full-width pill-btn" onclick="openBookingModal('3D2N Seraj Circuit')">Request Custom Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sacred Forest Guidelines -->
+        <div class="guidelines-box">
+          <h4>
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Sacred Lake Sanctuary Etiquette
+          </h4>
+          <div class="guidelines-grid">
+            <div class="guide-item">
+              <strong>Strictly No Swimming</strong>
+              <p>The lake is holy water dedicated to the serpent goddess Budhi Nagin. Stepping into the water or washing is strictly prohibited.</p>
+            </div>
+            <div class="guide-item">
+              <strong>Remove Footwear at Shrine</strong>
+              <p>Footwear must be taken off before approaching the temple precincts and the circumambulation path.</p>
+            </div>
+            <div class="guide-item">
+              <strong>Leave No Trace</strong>
+              <p>Carry all plastic, bottles, and wrappers back with you to Jalori Pass. Respect the sacred birds that keep the waters clean.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 2: CAMPING AT RAGHUPUR FORT -->
+  <!-- ========================================================================= -->
+  <div class="tab-pane" id="pane-camping">
+    <section class="hero-section hero-camping">
+      <canvas id="star-canvas-camping" class="star-canvas"></canvas>
+      <div class="hero-silhouette"></div>
+      
+      <div class="hero-container">
+        <div class="hero-breadcrumbs">
+          <a href="#serolsar" onclick="switchTab('serolsar')">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Camping</span>
+        </div>
+        <p class="hero-kicker">ALTITUDE 3,540 M &bull; 11,600 FT</p>
+        <h1 class="hero-title">
+          Sleep under <span class="italic-accent">a million stars</span><br>
+          at Raghupur Fort
+        </h1>
+        <p class="hero-subtitle">
+          Wake up to 360-degree Himalayan panoramas. Cozy alpine tents, campfire warmth, and authentic Himachali hospitality.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-amber pill-btn btn-hero" onclick="openBookingModal('Camping at Raghupur')">Book Campsite</button>
+          <a href="https://wa.me/917018736861?text=Hi%2C%20I%20want%20to%20book%20a%20camp%20at%20Raghupur%20Fort" target="_blank" class="btn btn-outline-white pill-btn btn-hero">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section">
+      <div class="content-container">
+        <div class="editorial-header">
+          <h2 class="editorial-title">An Unrivaled High-Altitude Campsite in the Himalayas</h2>
+          <p class="editorial-lead">
+            Perched atop rolling velvet meadows at 11,600 feet, Raghupur Fort Camps offer one of the most mesmerizing night skies in northern India. As dusk settles, watch the snow peaks of Dhauladhar and Pir Panjal catch the golden hour before the Milky Way stretches across the firmament.
+          </p>
+        </div>
+
+        <div class="camps-features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⛺</div>
+            <h4>Weatherproof Alpine Tents</h4>
+            <p>High-grade double-layered Quechua dome tents equipped with insulated foam mats, heavy fleece blankets, and sub-zero sleeping bags.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🍲</div>
+            <h4>Hot Himachali Meals</h4>
+            <p>Freshly prepared mountain dinner (dal, local greens, rajma, hot chapatis, and steaming desserts) alongside morning chai and hearty breakfast.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h4>Campfire & Acoustic Evenings</h4>
+            <p>Gather around a crackling campfire under the alpine chill, share mountain stories with fellow travelers, and marvel at shooting stars.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌄</div>
+            <h4>360° Sunrise & Sunset</h4>
+            <p>Step outside your tent at dawn to witness the first rays of sunlight set the snow-capped Himalayan ridges ablaze with pink and gold.</p>
+          </div>
+        </div>
+
+        <div class="stay-options-container">
+          <div class="center-header">
+            <span class="section-tag">ACCOMMODATION OPTIONS</span>
+            <h3 class="section-heading">Choose Your Camping Style</h3>
+          </div>
+
+          <div class="packages-grid">
+            <div class="package-card">
+              <div class="card-badge">Alpine Wilderness</div>
+              <h4 class="package-title">Standard Alpine Dome Tent</h4>
+              <p class="package-subtitle">Perfect for trekkers, solo adventurers, and backpackers wanting an authentic wilderness vibe.</p>
+              <div class="package-price">₹1,800 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>Twin / Triple sharing dome tent</li>
+                <li>Warm sleeping bags & foam mattresses</li>
+                <li>Evening tea & hot dinner</li>
+                <li>Morning breakfast & guided fort walk</li>
+              </ul>
+              <button class="btn btn-dark full-width pill-btn" onclick="openBookingModal('Standard Alpine Tent')">Select Tent</button>
+            </div>
+
+            <div class="package-card featured">
+              <div class="featured-ribbon">Best Value</div>
+              <div class="card-badge">Deluxe Comfort</div>
+              <h4 class="package-title">Luxury Meadow Tent with Bedding</h4>
+              <p class="package-subtitle">Spacious elevated tents with thick cotton mattresses, plush quilts, and extra warm blankets.</p>
+              <div class="package-price">₹2,400 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>Comfortable bedding with raised cot/mattress</li>
+                <li>Evening bonfire & barbecue snacks</li>
+                <li>Himachali dinner, dessert & buffet breakfast</li>
+                <li>Sunset photography point guidance</li>
+              </ul>
+              <button class="btn btn-amber full-width pill-btn" onclick="openBookingModal('Luxury Meadow Tent')">Select Luxury Tent</button>
+            </div>
+
+            <div class="package-card">
+              <div class="card-badge">Exclusive Stargazing</div>
+              <h4 class="package-title">Astrophile Private Setup</h4>
+              <p class="package-subtitle">Private secluded pitch away from main camps with red-light lanterns and hot beverage thermos for night observation.</p>
+              <div class="package-price">₹3,200 <span>/ person</span></div>
+              <ul class="package-features">
+                <li>Private secluded camp pitch</li>
+                <li>Midnight hot chocolate & thermos service</li>
+                <li>Binoculars & star-chart assistance</li>
+                <li>All gourmet meals included</li>
+              </ul>
+              <button class="btn btn-dark full-width pill-btn" onclick="openBookingModal('Astrophile Private Setup')">Select Stargazing Camp</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 3: FORT TREK -->
+  <!-- ========================================================================= -->
+  <div class="tab-pane" id="pane-fort-trek">
+    <section class="hero-section hero-fort">
+      <canvas id="star-canvas-fort" class="star-canvas"></canvas>
+      <div class="hero-silhouette"></div>
+      
+      <div class="hero-container">
+        <div class="hero-breadcrumbs">
+          <a href="#serolsar" onclick="switchTab('serolsar')">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Fort Trek</span>
+        </div>
+        <p class="hero-kicker">HISTORIC RUINS &bull; 3,540 M</p>
+        <h1 class="hero-title">
+          Raghupur Fort <span class="italic-accent">trail</span><br>
+          and ancient ruins
+        </h1>
+        <p class="hero-subtitle">
+          A thrilling 3.5 km trek from Jalori Pass through rhododendron forests to the historic fortress built by Mandi kings.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-amber pill-btn btn-hero" onclick="openBookingModal('Fort Trek Guide')">Hire Trek Guide</button>
+          <a href="#camping" class="btn btn-outline-white pill-btn btn-hero" onclick="switchTab('camping')">View Meadow Camps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section">
+      <div class="content-container">
+        <div class="editorial-header">
+          <h2 class="editorial-title">Trek to the Forgotten Citadel of Mandi Kings</h2>
+          <p class="editorial-lead">
+            Raghupur Fort (also known as Raghupur Garh) was originally constructed centuries ago by the rulers of the Mandi princely state as a strategic surveillance outpost guarding against invasions from Kullu and Suket. Today, its historic stone walls, ancient water reservoir, and majestic 360-degree ramparts overlook the Great Himalayan National Park.
+          </p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num">3.5 km</span>
+            <span class="stat-label">Trail Distance</span>
+            <span class="stat-note">From Jalori Pass</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">11,600 ft</span>
+            <span class="stat-label">Summit Altitude</span>
+            <span class="stat-note">High alpine meadow</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1.5 - 2 hrs</span>
+            <span class="stat-label">Ascent Duration</span>
+            <span class="stat-note">Moderate steady climb</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">360°</span>
+            <span class="stat-label">Mountain Views</span>
+            <span class="stat-note">Pir Panjal & Dhauladhar</span>
+          </div>
+        </div>
+
+        <div class="story-grid">
+          <div class="story-content">
+            <span class="section-tag">HERITAGE & TRAIL</span>
+            <h3 class="story-heading">Walking the Ancient Ridge of Kings</h3>
+            <p>
+              The trail starts right from Jalori Pass, breaking away from the tourist crowd into dense oak and rhododendron woodlands. Within 20 minutes, the forest canopy gives way to dramatic alpine meadows (locally called Bugyals) that roll on endlessly towards the sky.
+            </p>
+            <p>
+              As you near the top, the ancient dry-stone masonry of Raghupur Fort emerges like a crown upon the ridge. Walk through the surviving ramparts, discover the historic sunken stone pond that provided freshwater during medieval sieges, and stand where sentries kept watch over two Himalayan kingdoms.
+            </p>
+            <div class="highlight-quote">
+              <p>"On a clear afternoon, you can count dozens of snow peaks, and watch hawks glide on thermals far beneath your feet."</p>
+            </div>
+          </div>
+          <div class="story-media">
+            <div class="media-frame">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Himalayan Mountain Ridge" class="media-img">
+              <div class="media-caption">
+                <span>The scenic meadow ridge leading to Raghupur Fort</span>
+                <span class="badge">11,600 ft Ridge</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 4: JIBHI & TIRTHAN -->
+  <!-- ========================================================================= -->
+  <div class="tab-pane" id="pane-jibhi-tirthan">
+    <section class="hero-section hero-jibhi">
+      <canvas id="star-canvas-jibhi" class="star-canvas"></canvas>
+      <div class="hero-silhouette"></div>
+      
+      <div class="hero-container">
+        <div class="hero-breadcrumbs">
+          <a href="#serolsar" onclick="switchTab('serolsar')">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Jibhi & Tirthan</span>
+        </div>
+        <p class="hero-kicker">VALLEY OF WATERFALLS & CEDARS</p>
+        <h1 class="hero-title">
+          Explore Jibhi <span class="italic-accent">and the pristine</span><br>
+          Tirthan Valley
+        </h1>
+        <p class="hero-subtitle">
+          Charming wooden cottages, hidden waterfalls, ancient kath-kuni architecture, and trout streams nestled at the foothills of Jalori.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-amber pill-btn btn-hero" onclick="openBookingModal('Jibhi Valley Tour')">Explore Valley Stays</button>
+          <a href="https://wa.me/917018736861?text=Hi%2C%20tell%20me%20more%20about%20Jibhi%20and%20Tirthan%20Valley%20sightseeing" target="_blank" class="btn btn-outline-white pill-btn btn-hero">Ask a Local Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section">
+      <div class="content-container">
+        <div class="editorial-header">
+          <h2 class="editorial-title">The Peaceful Heart of Himachal</h2>
+          <p class="editorial-lead">
+            Just 12 km down the mountain from Jalori Pass lies Jibhi, an enchanting hamlet of pine-scented air, gushing streams, and authentic Himachali warmth. Continue into Tirthan Valley, home to the UNESCO World Heritage Great Himalayan National Park.
+          </p>
+        </div>
+
+        <div class="valley-places-grid">
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Chehni Kothi Ancient Tower" class="place-img">
+            <div class="place-body">
+              <span class="place-tag">1500-YEAR HERITAGE</span>
+              <h4>Chehni Kothi Tower</h4>
+              <p>An astonishing 15-story wooden tower temple built without mortar using traditional Himalayan Kath-Kuni earthquake-resistant architecture.</p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80" alt="Jibhi Waterfalls and Pine Forest" class="place-img">
+            <div class="place-body">
+              <span class="place-tag">NATURE TRAIL</span>
+              <h4>Jibhi & Chhoie Waterfalls</h4>
+              <p>Stroll across handcrafted wooden bridges to reach tucked-away alpine cascades enveloped in moss and fern groves.</p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Tirthan River Valley" class="place-img">
+            <div class="place-body">
+              <span class="place-tag">UNESCO SITE</span>
+              <h4>Great Himalayan National Park</h4>
+              <p>A global biodiversity hotspot teeming with western tragopan, Himalayan monal, musk deer, and crystal-clear trout waters.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 5: PLAN YOUR TRIP -->
+  <!-- ========================================================================= -->
+  <div class="tab-pane" id="pane-plan-trip">
+    <section class="hero-section hero-plan">
+      <canvas id="star-canvas-plan" class="star-canvas"></canvas>
+      <div class="hero-silhouette"></div>
+      
+      <div class="hero-container">
+        <div class="hero-breadcrumbs">
+          <a href="#serolsar" onclick="switchTab('serolsar')">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Plan Your Trip</span>
+        </div>
+        <p class="hero-kicker">TRAVEL ESSENTIALS &bull; JALORI PASS</p>
+        <h1 class="hero-title">
+          How to reach <span class="italic-accent">and prepare</span><br>
+          for your expedition
+        </h1>
+        <p class="hero-subtitle">
+          Everything you need to know: Routes from Delhi & Chandigarh, altitude guide, seasonal weather, packing checklist, and FAQs.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-amber pill-btn btn-hero" onclick="openBookingModal('Trip Planning Assistance')">Talk to Trip Coordinator</button>
+          <a href="https://wa.me/917018736861?text=Hi%2C%20I%20need%20help%20planning%20my%20trip%20to%20Jalori%20Pass%20and%20Raghupur%20Camps" target="_blank" class="btn btn-outline-white pill-btn btn-hero">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section">
+      <div class="content-container">
+        
+        <div class="editorial-header">
+          <h2 class="editorial-title">Trip Planning & Route Guide</h2>
+          <p class="editorial-lead">
+            Jalori Pass sits between the outer Seraj and inner Seraj regions, connecting Shimla and Kullu districts. Here is our direct guide on reaching us smoothly and comfortably.
+          </p>
+        </div>
+
+        <!-- How to Reach Cards -->
+        <div class="route-cards-grid">
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-badge">From Delhi / Chandigarh</span>
+              <h4>Overnight Bus via Aut Tunnel</h4>
+            </div>
+            <p>Take any overnight Volvo/Semi-sleeper bus headed towards Manali or Kullu. De-board at the <strong>Aut Tunnel</strong> (approx. 11-12 hours from Delhi).</p>
+            <p class="route-sub">From Aut, take a local taxi or bus to Banjar & Jibhi (30 km), then continue up to Jalori Pass (12 km).</p>
+          </div>
+
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-badge">Self Drive / Bike</span>
+              <h4>Scenic Road Route</h4>
+            </div>
+            <p><strong>Route:</strong> Delhi &rarr; Chandigarh &rarr; Mandi &rarr; Pandoh &rarr; Aut Tunnel &rarr; Larji &rarr; Banjar &rarr; Jibhi &rarr; Jalori Pass.</p>
+            <p class="route-sub">Well-paved highway until Banjar. The final 12 km from Jibhi to Jalori is a steep mountain ascent with spectacular views.</p>
+          </div>
+
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-badge">Flight / Train</span>
+              <h4>Nearest Airport & Railhead</h4>
+            </div>
+            <p><strong>Airport:</strong> Bhuntar Airport (Kullu) is 50 km away.</p>
+            <p><strong>Railway:</strong> Chandigarh Railway Station (260 km) or Kalka.</p>
+            <p class="route-sub">We can arrange private sanitized cab pick-ups directly from Bhuntar or Chandigarh on request.</p>
+          </div>
+        </div>
+
+        <!-- Seasonal Calendar -->
+        <div class="seasons-container">
+          <div class="center-header">
+            <span class="section-tag">WHEN TO VISIT</span>
+            <h3 class="section-heading">Seasons at Jalori & Raghupur</h3>
+          </div>
+
+          <div class="seasons-grid">
+            <div class="season-card">
+              <h4>Spring (Mar – May)</h4>
+              <p class="season-temp">10°C to 20°C</p>
+              <p>Rhododendrons in full bloom, mild breezes, snow lingering on north-facing slopes.</p>
+            </div>
+            <div class="season-card">
+              <h4>Summer (Jun – Jul)</h4>
+              <p class="season-temp">14°C to 24°C</p>
+              <p>Escapes the plains' heat, lush green meadows, comfortable camping nights.</p>
+            </div>
+            <div class="season-card">
+              <h4>Autumn (Sep – Nov)</h4>
+              <p class="season-temp">4°C to 16°C</p>
+              <p>Crispest skies of the year, best visibility for milky way stargazing and snow peaks.</p>
+            </div>
+            <div class="season-card">
+              <h4>Winter (Dec – Feb)</h4>
+              <p class="season-temp">-6°C to 8°C</p>
+              <p>Heavy snowfall wonderland, snow trekking for the intrepid, frozen Serolsar lake.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="faq-container">
+          <div class="center-header">
+            <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+            <h3 class="section-heading">Common Traveler Inquiries</h3>
+          </div>
+
+          <div class="accordion" id="faq-accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleFaq(this)">
+                <span>Is Serolsar Lake trek suitable for kids and beginners?</span>
+                <span class="accordion-arrow">&plus;</span>
+              </button>
+              <div class="accordion-content">
+                <p>Yes, absolutely! The 5 km trail from Jalori Pass to Serolsar Lake has a very gentle gradient with well-marked stone and forest paths. It is widely considered one of the easiest and most rewarding Himalayan forest treks for families and first-time hikers.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleFaq(this)">
+                <span>What is the mobile phone network situation at Jalori and the camps?</span>
+                <span class="accordion-arrow">&plus;</span>
+              </button>
+              <div class="accordion-content">
+                <p>Jio and Airtel have decent 4G reception at Jalori Pass and on parts of the Raghupur Fort ridge. At Serolsar Lake itself, network connectivity drops completely, making it an ideal digital detox experience in nature.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleFaq(this)">
+                <span>Are there washroom facilities available at Raghupur Fort Camps?</span>
+                <span class="accordion-arrow">&plus;</span>
+              </button>
+              <div class="accordion-content">
+                <p>Yes. We provide eco-friendly, sanitized alpine dry-pit toilet tents equipped with running water buckets and toiletries, set up responsibly in accordance with leave-no-trace mountain guidelines.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleFaq(this)">
+                <span>What should I pack for an overnight stay at Raghupur Fort?</span>
+                <span class="accordion-arrow">&plus;</span>
+              </button>
+              <div class="accordion-content">
+                <p>Even in peak summer, high-altitude winds mean nighttime temperatures drop below 10°C (and below zero in autumn/winter). We strongly recommend bringing: a warm fleece/down jacket, thermal inners, sturdy trekking shoes with good grip, a woollen cap, a power bank, a personal water bottle, and a headlamp or flashlight.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3L2 21h20L12 3z"/>
+              <path d="M12 12v9"/>
+            </svg>
+            <span>Raghupur Fort Camps</span>
+          </div>
+          <p class="footer-desc">
+            Authentic Himalayan mountain adventures, high-altitude stargazing camps, and guided trails across Jalori Pass, Jibhi, and the inner Seraj valley.
+          </p>
+          <div class="footer-contacts">
+            <p><strong>Direct Line:</strong> <a href="tel:+917018736861">+91 70187 36861</a></p>
+            <p><strong>Base Location:</strong> Jalori Pass / Jibhi, Kullu District, Himachal Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Treks & Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="#serolsar" onclick="switchTab('serolsar')">Serolsar Lake Trek</a></li>
+            <li><a href="#camping" onclick="switchTab('camping')">Raghupur Fort Stargazing Camp</a></li>
+            <li><a href="#fort-trek" onclick="switchTab('fort-trek')">Raghupur Fort Trail</a></li>
+            <li><a href="#jibhi-tirthan" onclick="switchTab('jibhi-tirthan')">Chehni Kothi & Jibhi Waterfalls</a></li>
+            <li><a href="#plan-trip" onclick="switchTab('plan-trip')">2D/1N Jalori Circuit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Inquiries</h4>
+          <p class="footer-small">Call or message us anytime for custom itineraries, group rates, weather conditions, or campsite availability.</p>
+          <div class="footer-cta-stack">
+            <a href="tel:+917018736861" class="btn btn-amber pill-btn full-width">Call +91 70187 36861</a>
+            <a href="https://wa.me/917018736861?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20camping%20and%20trekking" target="_blank" class="btn btn-outline-white pill-btn full-width">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Raghupur Fort Camps. All rights reserved. Jalori Pass &bull; Himachal Pradesh.</p>
+        <p class="footer-credit">Handcrafted for Himalayan Travelers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING QUICK CONTACT BAR (MOBILE & DESKTOP) -->
+  <!-- ========================================================================= -->
+  <div class="floating-quick-bar">
+    <a href="tel:+917018736861" class="quick-btn quick-call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/917018736861?text=Hi%2C%20I%20am%20interested%20in%20Raghupur%20Fort%20Camps%20and%20Treks" target="_blank" class="quick-btn quick-whatsapp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- BOOKING MODAL -->
+  <!-- ========================================================================= -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+      <div class="modal-header">
+        <span class="modal-kicker">INSTANT INQUIRY</span>
+        <h3 class="modal-title">Book Your Alpine Experience</h3>
+        <p class="modal-desc">Direct confirmation with our base camp team at Jalori Pass.</p>
+      </div>
+
+      <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+        <div class="form-group">
+          <label for="form-package">Selected Experience</label>
+          <select id="form-package" class="form-control" required>
+            <option value="Serolsar Lake Trek">Serolsar Lake Guided Trek</option>
+            <option value="Raghupur Fort Camp (Overnight)">Raghupur Fort Meadow Camp (Overnight)</option>
+            <option value="Serolsar + Raghupur Combo 2D1N" selected>Serolsar + Raghupur Combo (2D / 1N)</option>
+            <option value="Jibhi & Tirthan Valley Tour">Jibhi & Tirthan Valley Tour</option>
+            <option value="Custom Group Expedition">Custom Group / Corporate Expedition</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name">Your Full Name</label>
+            <input type="text" id="form-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+          </div>
+          <div class="form-group">
+            <label for="form-phone">Contact Phone / WhatsApp</label>
+            <input type="tel" id="form-phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-date">Estimated Travel Date</label>
+            <input type="date" id="form-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="form-guests">Number of Guests</label>
+            <select id="form-guests" class="form-control">
+              <option value="1">1 Person (Solo)</option>
+              <option value="2" selected>2 Persons (Couple / Duo)</option>
+              <option value="3-5">3 - 5 Persons (Small Group)</option>
+              <option value="6-10">6 - 10 Persons (Group)</option>
+              <option value="10+">10+ Persons (Large Group)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="form-notes">Special Requests / Questions (Optional)</label>
+          <textarea id="form-notes" class="form-control" rows="2" placeholder="Tell us if you need pickup from Aut/Bhuntar, food preferences, etc."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-amber pill-btn full-width">Send Booking Request on WhatsApp</button>
+          <a href="tel:+917018736861" class="btn btn-outline-dark pill-btn full-width" style="margin-top: 8px;">Or Call +91 70187 36861 Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
