@@ -24,7 +24,7 @@ Each page has its own title, description, canonical URL, social preview tags and
 
 1. **Domain.** All canonical URLs, `og:url`, the sitemap and `robots.txt` use `https://humsafarcommunity.github.io/raghupurcamps`. If you connect a custom domain, find and replace that address in every `.html` file, `sitemap.xml` and `robots.txt`.
 2. **Prices and package contents.** Prices (Rs 1,200 to 5,500) and inclusions come from the original site. Confirm them, and the tent and meal details, against what you actually offer.
-3. **Photos.** The two photos on the Fort Trek and Serolsar pages are placeholder stock images. Replace them with your own photos (add the files to the repo and change the `src`). Real photos of the camp will help both bookings and rankings.
+3. **Photos.** The site now uses your real camp photos (in `images/`). For the sharpest result, send originals as a WhatsApp "Document" (not "Photo"), because WhatsApp compresses photos. To add or swap a photo, put it in `images/` and update the `src` in the page.
 4. **Contact number.** `+91 70187 36861` is used for calls and WhatsApp everywhere (search for `7018736861` to change it).
 5. **Google Business Profile / Maps.** Add a pin for the camp and link it from the footer once it exists. Adding exact coordinates to the structured data on the home page will also help.
 

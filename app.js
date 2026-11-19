@@ -81,6 +81,15 @@
   /* ---------- Booking dialog ---------- */
   function pad(n) { return String(n).padStart(2, '0'); }
 
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  /* '2026-12-14' -> '14 Dec 2026' (falls back to the raw value) */
+  function prettyDate(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+    if (!m) return iso;
+    return parseInt(m[3], 10) + ' ' + MONTHS[parseInt(m[2], 10) - 1] + ' ' + m[1];
+  }
+
   function tomorrowISO() {
     var d = new Date();
     d.setDate(d.getDate() + 1);
@@ -140,12 +149,13 @@
         '*Experience:* ' + (PACKAGES[f.get('package')] || f.get('package')),
         '*Name:* ' + String(f.get('name')).trim(),
         '*Phone:* ' + String(f.get('phone')).trim(),
-        '*Travel date:* ' + f.get('date'),
+        '*Travel date:* ' + prettyDate(String(f.get('date'))),
         '*Guests:* ' + f.get('guests')
       ];
       var notes = String(f.get('notes') || '').trim();
       if (notes) lines.push('*Notes:* ' + notes);
       lines.push('', 'Please confirm availability and share the details. Thank you!');
+      lines.push('(Sent from: ' + document.title + ')');
 
       var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
       closeDialog();

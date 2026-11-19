@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/index.html</loc><lastmod>2026-11-14</lastmod><priority>1.0</priority></url>
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/raghupur-fort-camping.html</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/raghupur-fort-trek.html</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/serolsar-lake-trek.html</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/jibhi-tirthan-valley.html</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://humsafarcommunity.github.io/raghupurcamps/plan-your-trip.html</loc><lastmod>2026-11-14</lastmod><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/index.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-camp-tents-himalayan-view.jpg</image:loc><image:caption>Row of dome tents on the green ridge at Raghupur Fort camp with Himalayan peaks and clouds behind</image:caption></image:image>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-ridge-sunset-view.jpg</image:loc><image:caption>Traveller sitting on the grassy ridge at Raghupur Fort watching the sun set over layered Himalayan ranges</image:caption></image:image>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-camp-milky-way-night-sky.jpg</image:loc><image:caption>Milky Way and thousands of stars over a pine-covered ridge at the Raghupur Fort camp</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/raghupur-fort-camping.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-camp-tents-himalayan-view.jpg</image:loc><image:caption>Row of dome tents on the green ridge at Raghupur Fort camp with Himalayan peaks and clouds behind</image:caption></image:image>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-camp-milky-way-night-sky.jpg</image:loc><image:caption>Milky Way and thousands of stars over a pine-covered ridge at the Raghupur Fort camp</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/raghupur-fort-trek.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-ridge-sunset-view.jpg</image:loc><image:caption>Traveller sitting on the grassy ridge at Raghupur Fort watching the sun set over layered Himalayan ranges</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/serolsar-lake-trek.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://humsafarcommunity.github.io/raghupurcamps/images/raghupur-fort-camp-tents-himalayan-view.jpg</image:loc><image:caption>Row of dome tents on the green ridge at Raghupur Fort camp with Himalayan peaks and clouds behind</image:caption></image:image>
+  </url>
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/jibhi-tirthan-valley.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://humsafarcommunity.github.io/raghupurcamps/plan-your-trip.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
