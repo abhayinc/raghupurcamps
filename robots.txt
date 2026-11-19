@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://humsafarcommunity.github.io/raghupurcamps/sitemap.xml
+Sitemap: https://www.raghupurcamps.com/sitemap.xml

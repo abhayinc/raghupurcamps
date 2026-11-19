@@ -22,7 +22,7 @@ Each page has its own title, description, canonical URL, social preview tags and
 
 ## Before you publish: things to check
 
-1. **Domain.** All canonical URLs, `og:url`, the sitemap and `robots.txt` use `https://humsafarcommunity.github.io/raghupurcamps`. If you connect a custom domain, find and replace that address in every `.html` file, `sitemap.xml` and `robots.txt`.
+1. **Domain.** All canonical URLs, `og:url`, the sitemap and `robots.txt` use `https://www.raghupurcamps.com`. If you connect a custom domain, find and replace that address in every `.html` file, `sitemap.xml` and `robots.txt`.
 2. **Prices and package contents.** Prices (Rs 1,200 to 5,500) and inclusions come from the original site. Confirm them, and the tent and meal details, against what you actually offer.
 3. **Photos.** The site now uses your real camp photos (in `images/`). For the sharpest result, send originals as a WhatsApp "Document" (not "Photo"), because WhatsApp compresses photos. To add or swap a photo, put it in `images/` and update the `src` in the page.
 4. **Contact number.** `+91 70187 36861` is used for calls and WhatsApp everywhere (search for `7018736861` to change it).
@@ -42,7 +42,7 @@ then visit `http://localhost:8000`.
 
 1. Repository **Settings** > **Pages**.
 2. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. The site goes live at `https://humsafarcommunity.github.io/raghupurcamps/`.
+3. The site goes live at `https://www.raghupurcamps.com/`.
 4. Submit `sitemap.xml` in Google Search Console after launch.
 
 &copy; 2026 Raghupur Fort Camps. Jalori Pass, Himachal Pradesh, India.
