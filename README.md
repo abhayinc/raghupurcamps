@@ -14,6 +14,8 @@ Plain HTML, CSS and a little JavaScript. No build step, no dependencies.
 | `serolsar-lake-trek.html` | Serolsar Lake trek, legend, packages |
 | `jibhi-tirthan-valley.html` | Jibhi, Chehni Kothi, Tirthan Valley |
 | `plan-your-trip.html` | How to reach, seasons, packing list, FAQ |
+| `guides.html` | Hub for the travel guides |
+| `serolsar-lake-trek-guide.html`, `raghupur-fort-trek-guide.html`, `camping-jalori-pass-vs-jibhi-riverside.html`, `things-to-do-in-jibhi.html`, `jalori-pass-road-status-winter-closure.html` | Long-form SEO guides |
 | `404.html` | Not-found page |
 
 Shared files: `styles.css`, `app.js`, `favicon.svg`, `apple-touch-icon.png`, `og-image.jpg` (social share preview), `sitemap.xml`, `robots.txt`.
